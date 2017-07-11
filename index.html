@@ -131,30 +131,59 @@
 	   		</div> 
    		</div>
    		<div class="row contact-content">
-   			<div class="col-four tab-full contact-info end animate-this">
-				<h5>Contact Information</h5>
-	         	<div class="cinfo">
+   			<div class="tab-full contact-info end animate-this">
+				<h5 align="center">Contact Information</h5>
+	         	<div class="cinfo col-four">
 		   			<p>Mrs. Resmi Cherian</p>
 		   			<h6>CSE Asst. Prof., VJCET<br><i class="fa fa-whatsapp" aria-hidden="true"></i><a href="whatsapp://?send?text=Hello?number=8281727876"> +91 82817 27876</a></h6>
 		   		</div>
-		   		<div class="cinfo">
+		   		<div class="cinfo col-four">
 		   			<p>Cyriac S. Mannoor</p>
-		   			<h6>Chairman, CSI SB, VJCET<br><i class="fa fa-whatsapp" aria-hidden="true"></i><a href="whatsapp://?send?text=Hello?number=8547572509"> +91 85475 72509</a></h6>
+		   			<h6>Chairman, CSI, VJCET<br><i class="fa fa-whatsapp" aria-hidden="true"></i><a href="whatsapp://?send?text=Hello?number=8547572509"> +91 85475 72509</a></h6>
 		   		</div>
-		   		<div class="cinfo">
+		   		<div class="cinfo col-four">
 		   			<p>Mariya Varghese</p>
-		   			<h6>Vice Chairperson, CSI SB, VJCET<br><i class="fa fa-whatsapp" aria-hidden="true"></i><a href="whatsapp://?send?text=Hello?number=7012523667"> +91 70125 23667</a></h6>
+		   			<h6>Vice Chairperson, CSI, VJCET<br><i class="fa fa-whatsapp" aria-hidden="true"></i><a href="whatsapp://?send?text=Hello?number=7012523667"> +91 70125 23667</a></h6>
 		   		</div> 
          	</div>
-   		</div>
-	</section>
+	   		
+	   		<style>
+	   			#map {
+	   				height: 300px;
+	   				width: 100%;
+	   			}
+	   		</style>
+	   		<div id="map"></div>
+			<script>
+				function initMap() {
+				    var uluru = {
+				        lat: 9.9511,
+				        lng: 76.6306
+				    };
+				    var map = new google.maps.Map(document.getElementById('map'), {
+				        zoom: 16,
+				        scrollwheel: false,
+				        draggable: false,
+				        center: uluru
+				    });
+				    var marker = new google.maps.Marker({
+				        position: uluru,
+				        map: map
+				    });
+				}
+		    </script>
+			<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDq1BTn2wI8UQdVPKMvAIiPsEQc6C_BvlY&callback=initMap"></script>
+		</div>	
+	</section> 
 
    	<div class="footer-bottom">
       	<div class="row">
       		<div class="col-twelve">
 	      		<div class="copyright">
-		         	<span>hackOn 2017</span>
-		         </div>		               
+		         	<span><i class="fa fa-copyright" aria-hidden="true"></i> hackOn 2017</span>
+		         	<a href="https://www.github.com/SooluThomas" class="pull-right"><font size="6px" color="#000000"><i class="fa fa-github-square" aria-hidden="true"></i></font></a>
+		         </div>	
+		         <!-- <p>Coded with <span style="color: red">❤</span> by <a href="www.github.com/SooluThomas">Soolu Thomas</a></p> -->
 	      	</div>
       	</div>   	
       </div>
@@ -178,7 +207,7 @@
    </div>
    <script>
         $(window).load(function() {
-            $('.myload').fadeOut('slow');
+            $('.myload').fadeOut(4000);
             $("body").fadeIn(9000);
         });
     </script>
