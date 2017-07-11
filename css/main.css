@@ -2513,10 +2513,6 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   }
 }
 
-#map {
-    height: 400px;
-    width: 100%;
-}
 footer {
   margin: 0 0 5.4rem 0;
   padding: 0;
